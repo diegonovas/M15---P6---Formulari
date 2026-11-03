@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Carrousel M15 - Diego Novas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url('./img/dierise.jfif');
+            background-size: cover;
+            background-position: center;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            backdrop-filter: blur(8px);
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body body class="bg-light text-dark justify-content-center align-items-center">
+    <div class="container text-center font-weight-bold">
+    <div id="carouselExampleCaptions" class="carousel slide shadow-lg rounded-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/motd2.jfif" class="d-block w-75 mx-auto" alt="Bo2 ZM">
+                <div class="carousel-caption">
+                    <h5>Mob of The Dead</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/mauer.jfif" class="d-block w-75 mx-auto" alt="BoCW ZM">
+                <div class="carousel-caption">
+                    <h5>Mauer der Toten</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/zminspaceland.jpg" class="d-block w-75 mx-auto" alt="Spaceland ZM">
+                <div class="carousel-caption">
+                    <h5>Zombies in Spaceland</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+</body>
+</html>
