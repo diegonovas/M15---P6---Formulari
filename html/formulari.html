@@ -9,21 +9,22 @@
 </head>
 <body>
     <script>
-        async function cridaSubmit1(event) {
+        async function cridaSubmit(event) {
           const nom = formulari.elements["nom"].value;
           alert("Hola " + nom);
-        }
-        
+        }  
     </script>
-    <form id="formulari" onsubmit="cridaSubmit(event)">
-        <div class="mb-3">
-            <label class="form-label">Nom</label>
-            <input type="text" name="nom" class="form-control" required>
-        </div>
 
-         <div class="mb-3">
-            <label class="form-label">Cognom</label>
-            <input type="text" name="cognom" class="form-control" required>
+    <form id="formulari" onsubmit="cridaSubmit(event)">
+        <div class="row justify-content-center">
+            <div class="col">
+                <label class="form-label">Nom</label>
+                <input type="text" name="nom" class="form-control" required>
+            </div>
+            <div class="col">
+                <label class="form-label">Cognom</label>
+                <input type="text" name="cognom" class="form-control" required>
+            </div>
         </div>
 
          <div class="mb-3">
@@ -36,8 +37,17 @@
             <input type="email" name="email" class="form-control" required>
         </div>
 
+        <div class="mb-3">
+            <label for="inputState" class="form-label">Génere</label>
+            <select id="inputState" class="form-select">
+                <option selected>Tria...</option>
+                <option>Home</option>
+                <option>Dona</option>
+                <option>Altre</option>
+            </select>
+        </div>
     <button type="submit" class="btn btn-primary">
         Envia
-     </button>
+    </button>
 </body>
 </html>
